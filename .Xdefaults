@@ -1,0 +1,82 @@
+Xft*autohint:       0
+Xft*lcdfilter:      lcddefault
+Xft*hintstyle:      hintfull
+Xft*hinting:        Full
+Xft*antialias:      1
+Xft*dpi:            96
+Xft*rgba:           rgb
+URxvt.preeditType:  Root
+
+! Misc
+URxvt*termName:     xterm-256color
+URxvt*loginShell:   true
+!URxvt*fading:       30
+Urxvt*urgentOnBell: true
+
+! Perl extensions
+URxvt.perl-ext:                 default,url-select,keyboard-select,tabbedex,clipboard,fullscreen
+URxvt.url-select.underline:     true
+URxvt.url-select.autocopy:      true
+URxvt.url-select.launcher:      firefox
+URxvt.url-select.underline:     true
+URxvt.keysym.M-u:               perl:url-select:select_next
+URxvt.keysym.M-Escape:          perl:keyboard-select:activate
+URxvt.keysym.M-s:               perl:keyboard-select:search
+URxvt.clipboard.autocopy:       true
+URxvt.keysym.F11:               perl:fullscreen:switch
+URxvt.tabbed.new-button:        false
+URxvt.tabbed.autohide:          true
+URXvt.tabbed.reopen-on-close:   yes
+
+! Blinkcursor
+!URxvt*cursorBlink:  True
+URxvt*saveLines:    12000
+
+! Font
+URxvt*font:         xft:Monaco for Powerline:Regular:pixelsize=14,xft:DejaVu Sans Mono for Powerline:Regular:pixelsize=15
+URxvt*boldfont:     xft:Monaco for Powerline:Bold:pixelsize=14,xft:DejaVu Sans Mono for Powerline:Bold:pixelsize=15
+
+! Color
+URxvt*depth:        32
+URxvt*cursorColor:  #999999
+URxvt*colorBD:      #FFFFFF
+URxvt*colorUL:      #FFFF99
+URxvt*foreground:   #F8D8F8
+URxvt*background:   [85]#010101
+! Black + DarkGrey
+URxvt*color0:       #010101
+URxvt*color8:       #787878
+! DarkRed + Red
+URxvt*color1:       #F02727
+URxvt*color9:       #FE6767
+! DarkGreen + Green
+URxvt*color2:       #58F898
+URxvt*color10:      #B8F8D8
+! DarkYellow + Yellow
+URxvt*color3:       #FFCC33
+URxvt*color11:      #FFD285
+! DarkBlue + Blue
+URxvt*color4:       #6888FC
+URxvt*color12:      #B8B8F8
+! DarkMagenta + Magenta
+URxvt*color5:       #F878F8
+URxvt*color13:      #F8B8F8
+!DarkCyan + Cyan
+URxvt*color6:       #00E8D8
+URxvt*color14:      #00FCFC
+! LightGrey + White
+URxvt*color7:       #BCBCBC
+URxvt*color15:      #FCFCFC
+
+! ScrollBar
+URxvt*scrollBar:    false
+
+! Scroll
+URxvt*mouseWheelScrollPage: true
+URxvt*scrollTtyOutput:      false
+URxvt*scrollWithBuffer:     true
+URxvt*scrollTtyKeypress:    true
+
+URxvt.iso14755:             False
+URxvt.keysym.Control-Left:  \033[1;5D
+URxvt.keysym.Control-Right: \033[1;5C
